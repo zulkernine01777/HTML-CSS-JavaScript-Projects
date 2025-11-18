@@ -5,6 +5,7 @@ let ms = 0;
 let timer = false;
 
 document.getElementById("start").onclick = function () {
+    if(timer) return null;
     timer = true;
     stopwatch();
 };
